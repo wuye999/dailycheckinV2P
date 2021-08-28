@@ -82,7 +82,7 @@ class SspanelQd(object):
             email = str(airport_account.get("airport_email"))
             password = str(airport_account.get("airport_password"))
             msg = self.checkin(url,email,password)
-            msg_all += msg + '\n\n'
+            msg_all += url + '\n' + msg + '\n\n'
         return msg_all
 
 def start():
